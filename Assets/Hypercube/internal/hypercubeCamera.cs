@@ -218,4 +218,12 @@ using System.Collections.Generic;
             updateOverlap();
         }
 
+        public void quitApp()
+        {
+#if UNITY_EDITOR
+            UnityEditor.EditorApplication.isPlaying = false;
+#else
+         Application.Quit();
+#endif
+        }
     }
