@@ -1,4 +1,4 @@
-﻿Shader "Hypercube/3D Texture/Density Highlight"
+﻿Shader "Hypercube/Dicom Viewer/3D tex Density Highlight"
 {
 	Properties
 	{
