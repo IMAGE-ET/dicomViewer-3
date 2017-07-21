@@ -8,7 +8,7 @@ public class dicomMeshLoader: MonoBehaviour {
     
     public float valueMod = 1f;
     public float size = 1f;
-    public int interpolatedSlices = 30;
+    public int interpolatedSlices = 12;
 
     public GameObject volumeMesh;
 
@@ -65,7 +65,7 @@ public class dicomMeshLoader: MonoBehaviour {
         if (imageSlices < 1)
             return false;
 
-        interpolatedSlices = imageSlices; //start off with the same geometric density in w/h/d
+        //interpolatedSlices = imageSlices; //start off with the same geometric density in w/h/d
 
         //load the first texture to get the stats
         Texture2D tempTex = new Texture2D(2, 2);
